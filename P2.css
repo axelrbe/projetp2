@@ -1,0 +1,585 @@
+
+/*disposition de l'en-tête*/
+header img
+{
+    width: 150px;
+    height: 70px;
+    margin-left: 80px;
+}
+
+header h1
+{
+    margin-left: 40px;
+    margin-top: 40px;
+    font-size: 1.8em;
+    position: relative;
+    bottom: 20px;
+}
+
+header p
+{
+    font-size: 1.2em;
+    margin-left: 40px;
+    position: relative;
+    bottom: 50px;
+}
+
+#tete
+ {
+     display: flex;
+     flex-direction: column;
+ }
+
+ header
+ {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ header li
+ {
+     list-style-type: none; 
+     margin-right: 60px;
+     font-size: 1.3em;
+ }
+
+ header ul
+ {
+     display: flex;
+ }
+
+ nav a
+ {
+     color: black;
+     text-decoration: none;
+     padding: 20px 10px 10px 10px
+ }
+
+header a:hover
+{
+    color: #0065FC;
+    border-top: 2px solid;
+}
+
+.recherche
+{ 
+    border: 1px solid #F2F2F2;
+    padding: 15px;
+    position: relative;
+    bottom: 50px;
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+.bouton
+{
+    font-size: 20px;
+    position: relative;
+    bottom: 50px;
+    right: 10px;
+    padding: 14px;
+    color: white;
+    background-color: #0065FC;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+form i
+{
+    position: relative;
+    bottom: 50px;
+    left: 40px;
+    padding: 17px;
+    font-size: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #F2F2F2;
+}
+
+.filtres
+{
+    display: flex;
+}
+
+.filtres p
+{
+    margin-left: 40px;
+    font-size: 1.5em;
+    font-weight: bold;
+    position: relative;
+    bottom: 30px;
+}
+
+ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+.filtres a
+{
+    border: 0.5px solid #F2F2F2;
+    padding: 10px;
+    border-radius: 40px;
+    text-decoration: none;
+    color: black;
+    margin-right: 30px;
+    font-size: 1.3em;
+    font-weight: bold;
+    position: relative;
+    bottom: 30px;
+}
+
+.filtres a:hover
+{
+    background-color: #DEEBFF;
+}
+
+li i
+{
+    padding: 12px;
+    margin-right: 10px;
+    border-radius: 40px;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    position: relative;
+    right: 10px;
+}
+
+#info
+{
+    margin-left: 40px;
+    position: relative;
+    bottom: 50px;
+    font-size: 1.2em;
+}
+
+#info i
+{
+    padding:5px 10px;
+    color: #0065FC;
+    border: 2px solid #F2F2F2;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+ /*fin de l'en-tête*/
+
+ /*1ère section*/
+ /*section*/
+
+#hebergement
+{ 
+    position: relative;
+    bottom: 50px;
+    margin-left: 40px;
+    display: flex;
+    
+}
+
+section h1
+{
+    font-size: 1.8em;
+    margin-left: 40px;
+}
+
+section h2
+{
+    font-size: 1.2em;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+section p
+{
+    margin-left: 10px;
+}
+
+section a 
+{
+    text-decoration: none;
+    color: black;
+}
+
+section a:hover
+{
+    text-decoration: none;
+    color: black;
+}
+/*section*/
+
+/*article*/
+article
+{
+
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    width: 80%;
+    margin-right: 30px;
+}
+
+article img
+{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    width: 350px;
+    height: 150px;
+    object-fit: cover;
+}
+
+article div
+{
+    height: 230px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+article p
+{
+    position: relative;
+    bottom: 10px;
+}
+
+article i
+{
+    font-size: 15px;
+    position: relative;
+    bottom: 20px;
+    left: 10px;
+}
+
+#bleu
+{
+    color:#0065FC;
+}
+
+#grise
+{
+    color: #F2F2F2;
+}
+
+#image
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#cannebiere
+{
+    border: 5px solid transparent;
+    border-radius: 20px;
+    background-color: white;
+}
+
+#port
+{
+    border: 5px solid transparent;
+    border-radius: 20px;
+    background-color: white;
+}
+
+#mouette
+{
+    border: 5px solid transparent;
+    border-radius: 20px;
+    background-color: white;
+}
+
+#mer
+{
+    border: 5px solid transparent;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+#panier
+{
+    border: 5px solid transparent;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+#amina
+{
+    border: 5px solid transparent;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+#afficher
+{
+    margin-top: 40px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+/*article*/
+
+/*aside*/
+aside
+{
+    border: 5px solid transparent;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    width: 35%;
+    margin-right: 50px;
+}
+
+aside a
+{
+    display: flex;
+}
+
+aside h1
+{
+    margin-left: 20px;
+}
+
+aside img
+{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 180px;
+    height: 160px;
+    object-fit: cover;
+}
+
+aside p
+{
+    font-size: 1.2em;
+}
+
+aside i
+{
+    font-size: 15px;
+}
+
+#economie
+{
+    font-size: 30px;
+    margin-left: 200px;
+}
+
+
+#soleil
+{
+    border: 5px solid transparent;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+#eau
+{
+    border: 5px solid transparent;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+#blanc
+{ 
+    border: 5px solid transparent;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+    /*aside*/
+
+/*fin 1ère section*/
+
+
+/*début 2ème section*/
+h1
+{
+    margin-left: 40px;
+}
+
+#activite h2
+{
+    margin-top: 20px;
+}
+
+#activite
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+#activite img
+{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+#activite div
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#vieuxport
+{
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 8px #DEEBFF;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 10px;
+    width: 430px;
+    height: 600px;
+}
+
+.vieuxport
+{
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+#calanque
+{
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 8px #DEEBFF;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 10px;
+    width: 430px;
+    height: 600px;
+}
+
+.calanque
+{
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+#frioul
+{
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 8px #DEEBFF;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 10px;
+    width: 430px;
+    height: 250px;
+    margin-top: 75px;
+}
+
+.frioul
+{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+#pomegue
+{
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 8px #DEEBFF;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 10px;
+    width: 430px;
+    height: 270px;
+}
+
+#pomegue img
+{
+   width: 100%;
+   height: 220px;
+   object-fit: cover;
+}
+
+#garde
+{
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 8px #DEEBFF;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 10px;
+    width: 430px;
+    height: 250px;
+}
+
+.garde
+{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+#longchamp
+{
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 8px #DEEBFF;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 10px;
+    width: 430px;
+    height: 270px;
+    margin-top: 75px;
+}
+
+.longchamp
+{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.column1
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.column2
+{
+    display: flex;
+    flex-direction: column;
+}
+
+/*fin 2ème section*/
+
+/*footer*/
+
+footer
+{
+    margin-top: 40px;
+    background-color: #F2F2F2;
+    display: flex;
+}
+
+footer ul
+{
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer1
+{
+    margin-left: 40px;
+}
+
+.footer2
+{
+    margin-left: 500px;
+}
+
+.footer3
+{
+    margin-left: 500px;
+}
+
+footer a:hover
+{
+    font-weight: bold;
+}
+
