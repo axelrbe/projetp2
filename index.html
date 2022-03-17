@@ -13,11 +13,8 @@
 
     <body>
         <header>
-            <div id="tete">
-             <img src="logo/booki.png" alt="logo du site" />
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre ville ou en pleine nature</p>
-            </div>
+            <div id="ancre">
+            <img id="logo" src="logo/booki.png" alt="logo du site" />
 
             <nav>
                 <ul>
@@ -25,13 +22,20 @@
                     <li><a href="#activite">Activités</a></li>
                  </ul>
             </nav>
+            </div>
+
+            <div id="tete">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1><br />
+                <p>En plein centre ville ou en pleine nature</p>
+            </div>
+
         </header>
 
             <div class="formulaire">
 
                 <form method="post" action="page.php">
-                    <i class="fa-solid fa-location-dot"></i><input type="text" name="ville" value="Marseille, France" class="recherche"/>
-                    <input type="submit" value="Rechercher" class="bouton" name="ville" />
+                    <i id="localisation" class="fa-solid fa-location-dot"></i><input type="text" name="ville" value="Marseille, France" class="recherche"/>
+                    <input type="submit" value="Rechercher" class="bouton" name="ville" /><i id="loupe" class="fa-solid fa-magnifying-glass"></i>
                 </form>
 
             </div>
@@ -40,7 +44,7 @@
                 <p>Filtres</p>
                 <ul>
                     <li><a href="#"><i class="fa-solid fa-money-bill-wave"></i>Economiques</a></li>
-                    <li><a href="#"><i class="fa-solid fa-child"></i>Familial</a></li>
+                    <li id="familial"><a href="#"><i class="fa-solid fa-child"></i>Familial</a></li>
                     <li><a href="#"><i class="fa-solid fa-heart"></i>Romantique</a></li>
                     <li><a href="#"><i class="fa-solid fa-dog"></i>Animaux autorisés</a></li>
                 </ul>
@@ -53,7 +57,7 @@
 <!--fin de l'en-tête-->
 
 <!--debut 1ère section-->
-
+    <div id="blocnote">
         <section id="hebergement"> <!--conteneur-->
                 
             <article> <!--element1-->
@@ -66,8 +70,7 @@
                         <div id="cannebiere"><a href="#">
                             <img src="hebergement/cannebiere.jpg" alt="auberge">
                             <h2>Auberge La Cannebière</h2>
-                            <p>Nuit à partir de <strong>25€</strong></p>
-                            <i id="bleu" class="fa-solid fa-star"></i><i id="bleu" class="fa-solid fa-star"></i><i id="bleu" class="fa-solid fa-star"></i><i id="bleu" class="fa-solid fa-star"></i><i id="grise" class="fa-solid fa-star"></i></a>
+                            <p>Nuit à partir de <strong>25€</strong></p><i id="bleu" class="fa-solid fa-star"></i><i id="bleu" class="fa-solid fa-star"></i><i id="bleu" class="fa-solid fa-star"></i><i id="bleu" class="fa-solid fa-star"></i><i id="grise" class="fa-solid fa-star"></i></a>
                         </div>
                         
                         <div id="port"><a href="#">
@@ -104,7 +107,7 @@
 
                     </div>
 
-                    </article> <!--element1-->
+             </article> <!--element1-->
 
                         <aside> <!--element2-->
                             <h1>Les plus populaires<i id="economie" class="fa-solid fa-chart-line"></i></h1>
@@ -137,9 +140,11 @@
 
 <!--début 2ème section-->
 
-        <h1>Activités à Marseille</h1>
-        
-            <section id="activite">
+        <section id="activite">
+
+            <h1 class="titresection2">Activités à Marseille</h1>
+
+            <div id="imageactivite">
 
                     <div id="vieuxport"><a href="#">
                         <img src="activite/port_s.jpg" class="vieuxport"/>
@@ -179,7 +184,11 @@
 
                 </div>
 
+            </div>
+
+
             </section>
+    </div>
 
 <!--fin 2ème section-->
 
