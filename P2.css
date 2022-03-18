@@ -223,30 +223,19 @@ article img
 
 article div
 {
-    max-height: 230px;
     margin-left: 20px;
     margin-right: 10px;
 }
 
 article h2
 {
-    font-size: 1.2em;
     margin-left: 10px;
-    margin-top: 5px;
-}
-
-article p 
-{
-    position: relative;
-    bottom: 10px;
+    margin-top: 10px;
 }
 
 article i
 {
     font-size: 15px;
-    position: relative;
-    bottom: 20px;
-    left: 10px;
 }
 
 #bleu
@@ -402,13 +391,11 @@ aside i
 
 #activite h2
 {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 #activite
 {
-    display: flex;
-    flex-direction: column;
     margin-left: 20px;
 }
 
@@ -808,9 +795,9 @@ footer a:hover
 @media all and (min-width: 768px) and (max-width: 992px)
 {
 /*header*/
-    *
+    body 
     {
-        width: auto;
+        margin-left: 10px;
     }
 
     .filtres a 
@@ -830,7 +817,7 @@ footer a:hover
 /*section1*/
     article
     {
-        height: 2500px;
+        height: auto;
         width: auto;
     }
 
@@ -838,19 +825,12 @@ footer a:hover
     {
         margin-left: 10px;
         margin-top: 20px;
-        width: auto;
-        height: 360px;
     }
 
     article img 
     {
-        width: 600px;
-        height: 250px;
-    }
-    
-    article h2 
-    {
-        font-size: 1.8em;
+        width: 620px;
+        height: 320px;
     }
 
     article p 
@@ -862,7 +842,13 @@ footer a:hover
     {
         margin-top: 20px;
         width: auto;
-        height: 650px;
+        height: auto;
+    }
+
+    aside img 
+    {
+        width: 300px;
+        height: 200px;
     }
 /*section1*/
 
@@ -870,11 +856,20 @@ footer a:hover
     #imageactivite
     {
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
-        width: 600px;
-        height: auto;
     }
+
+    #vieuxport, #calanque
+    {
+        width: 320px;
+    }
+
+    #pomegue, #frioul, #garde, #longchamp
+    {
+        width: 300px;
+        height: 250px;
+    }
+
 /*section2*/
 
 /*footer*/
@@ -891,12 +886,14 @@ footer a:hover
 
     .footer2
     {
-        margin-left: 30px;
+        margin-left: 90px;
     }
 
     .footer3
     {
-        margin-left: 30px;
+        margin-left: 90px;
     }
+
+  
 }
 
