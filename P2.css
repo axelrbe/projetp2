@@ -18,8 +18,7 @@ header p
 {
     font-size: 1.2em;
     margin-left: 40px;
-    position: relative;
-    bottom: 50px;
+
 }
 
  header
@@ -69,8 +68,6 @@ header a:hover
 { 
     border: 1px solid #F2F2F2;
     padding: 15px;
-    position: relative;
-    bottom: 50px;
     margin-left: 40px;
     font-size: 20px;
 }
@@ -78,9 +75,6 @@ header a:hover
 .bouton
 {
     font-size: 20px;
-    position: relative;
-    bottom: 50px;
-    right: 10px;
     padding: 14px;
     color: white;
     background-color: #0065FC;
@@ -91,14 +85,13 @@ header a:hover
 
 #localisation
 {
-    position: relative;
-    bottom: 50px;
-    left: 40px;
     padding: 17px;
     font-size: 20px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     background-color: #F2F2F2;
+    position: relative;
+    left: 40px;
 }
 
 #loupe
@@ -109,15 +102,14 @@ header a:hover
 .filtres
 {
     display: flex;
+    flex-direction: row;
 }
 
 .filtres p
 {
     margin-left: 40px;
     font-size: 1.5em;
-    font-weight: bold;
-    position: relative;
-    bottom: 30px;
+    font-weight: bold; 
 }
 
 ul
@@ -136,13 +128,17 @@ ul
     margin-right: 30px;
     font-size: 1.3em;
     font-weight: bold;
-    position: relative;
-    bottom: 30px;
 }
 
 .filtres a:hover
 {
     background-color: #DEEBFF;
+}
+
+#row
+{
+    display: flex;
+    flex-direction: row;
 }
 
 li i
@@ -159,8 +155,6 @@ li i
 #info
 {
     margin-left: 40px;
-    position: relative;
-    bottom: 50px;
     font-size: 1.2em;
 }
 
@@ -180,8 +174,6 @@ li i
 #hebergement
 { 
     display: flex;
-    position: relative;
-    bottom: 50px;
     margin-left: 40px;   
 }
 
@@ -189,13 +181,6 @@ section h1
 {
     font-size: 1.8em;
     margin-left: 40px;
-}
-
-section h2
-{
-    font-size: 1.2em;
-    margin-left: 10px;
-    margin-top: 5px;
 }
 
 section p
@@ -238,12 +223,19 @@ article img
 
 article div
 {
-    height: 230px;
+    max-height: 230px;
     margin-left: 20px;
     margin-right: 10px;
 }
 
-article p
+article h2
+{
+    font-size: 1.2em;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+article p 
 {
     position: relative;
     bottom: 10px;
@@ -424,6 +416,7 @@ aside i
 {
     display: flex;
     flex-direction: row;
+    border: 1px solid transparent;
 }
 
 #activite img
@@ -604,12 +597,17 @@ footer a:hover
 
 /*mobile*/
 /*header*/
-@media all and (max-width: 768px)
+@media all and (max-width: 767px)
 {
-    body
-    {
-        width: auto;
 
+    header
+    {
+        margin-left: -30px;
+    }
+
+    header ul 
+    {
+        margin-left: 40px;
     }
 
     #ancre
@@ -628,6 +626,11 @@ footer a:hover
         display: none;
     }
 
+    #localisation
+    {
+        margin-left: -30px;
+    }
+
     #loupe
     {
         width: 20px;
@@ -636,36 +639,57 @@ footer a:hover
         padding: 17px;
         color: white;
         background-color: #0065FC;
-       border-radius: 20px;
+        border-radius: 20px;
         border: none;
         position: relative;
         bottom: 104px;
         left: 340px;
+        margin-left: -50px;
     }
 
     .filtres
     {
         flex-flow: column wrap;
         position: relative;
-        bottom: 60px;
+        bottom: 70px;
     }
 
     .filtres ul
     {
         display: flex;
         flex-direction: column;
+        position: relative;
+        bottom: 30px;
     }
 
-    .filtres a
+    .filtres a 
     {
-        display: flex;
-        flex-direction: row;
+        padding: 10px;
+        border: 2px solid #F2F2F2;
+        margin-left: -40px;
+    }
+
+    .filtres i 
+    {
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    .filtres p 
+    {
+        margin-left: 10px;
+    }
+
+    #familial
+    {
+        margin-left: 20px;
     }
 
     #info
     {
         position: relative;
         bottom: 100px;
+        margin-left: 10px;
     }
 /*header*/
 
@@ -723,14 +747,9 @@ footer a:hover
 /*section2*/
     #activite
     {
+        margin-left: 0;
         position: relative;
         bottom: 50px;
-        display: flex;
-        flex-direction: column;
-        margin-top: 0;
-        margin-left: 0;
-        margin-right: 0;
-        width: 400px;
         height: 900px;
     }
 
@@ -785,4 +804,99 @@ footer a:hover
 /*footer*/
 }
 /*mobile*/
+
+@media all and (min-width: 768px) and (max-width: 992px)
+{
+/*header*/
+    *
+    {
+        width: auto;
+    }
+
+    .filtres a 
+    {
+        flex-direction: column;
+        display: flex;
+        border: none;
+    }
+
+    #hebergement
+    {
+        display: flex;
+        flex-direction: column;
+    }
+/*header
+
+/*section1*/
+    article
+    {
+        height: 2500px;
+        width: auto;
+    }
+
+    article div 
+    {
+        margin-left: 10px;
+        margin-top: 20px;
+        width: auto;
+        height: 360px;
+    }
+
+    article img 
+    {
+        width: 600px;
+        height: 250px;
+    }
+    
+    article h2 
+    {
+        font-size: 1.8em;
+    }
+
+    article p 
+    {
+        font-size: 1.3em;
+    }
+
+    aside 
+    {
+        margin-top: 20px;
+        width: auto;
+        height: 650px;
+    }
+/*section1*/
+
+/*section2*/
+    #imageactivite
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 600px;
+        height: auto;
+    }
+/*section2*/
+
+/*footer*/
+    footer 
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer1
+    {
+        margin-left: 20px;
+    }
+
+    .footer2
+    {
+        margin-left: 30px;
+    }
+
+    .footer3
+    {
+        margin-left: 30px;
+    }
+}
 
