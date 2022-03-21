@@ -1,24 +1,32 @@
+body
+{
+    margin-left: 40px;
+}
+
+*, ::before, ::after
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 /*disposition de l'en-tête*/
 header img
 {
     width: 150px;
     height: 70px;
-    margin-left: 80px;
+    margin-left: 40px;
 }
 
 header h1
 {
-    margin-left: 40px;
-    margin-top: 40px;
+    margin-top: 30px;
     font-size: 1.8em;
 }
 
 header p
 {
     font-size: 1.2em;
-    margin-left: 40px;
-
 }
 
  header
@@ -30,6 +38,7 @@ header p
 
  #ancre
  {
+     margin-top: 30px;
      display: flex;
      flex-direction: row;
      justify-content: space-between;
@@ -55,7 +64,7 @@ header p
 
  header a
  {
-    padding: 20px 10px 10px 10px
+    padding: 25px 10px 10px 10px
  }
 
 header a:hover
@@ -68,30 +77,34 @@ header a:hover
 { 
     border: 1px solid #F2F2F2;
     padding: 15px;
-    margin-left: 40px;
     font-size: 20px;
+}
+
+.formulaire
+{
+    margin-top: 10px;
 }
 
 .bouton
 {
     font-size: 20px;
-    padding: 14px;
+    padding: 15px;
     color: white;
     background-color: #0065FC;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border: none;
+    position: relative;
+    right: 10px;
 }
 
 #localisation
 {
-    padding: 17px;
+    padding: 18px;
     font-size: 20px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     background-color: #F2F2F2;
-    position: relative;
-    left: 40px;
 }
 
 #loupe
@@ -101,13 +114,13 @@ header a:hover
 
 .filtres
 {
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
 }
 
 .filtres p
 {
-    margin-left: 40px;
     font-size: 1.5em;
     font-weight: bold; 
 }
@@ -126,6 +139,7 @@ ul
     text-decoration: none;
     color: black;
     margin-right: 30px;
+    margin-left: 20px;
     font-size: 1.3em;
     font-weight: bold;
 }
@@ -154,7 +168,7 @@ li i
 
 #info
 {
-    margin-left: 40px;
+    margin-top: 10px;
     font-size: 1.2em;
 }
 
@@ -173,14 +187,16 @@ li i
 
 #hebergement
 { 
-    display: flex;
-    margin-left: 40px;   
+    margin-top: 10px;
+    display: flex;   
 }
 
 section h1
 {
+    margin-top: 30px;
+    margin-bottom: 10px;
     font-size: 1.8em;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 section p
@@ -235,6 +251,7 @@ article h2
 
 article i
 {
+    margin-top: 10px;
     font-size: 15px;
 }
 
@@ -384,19 +401,10 @@ aside i
 
 
 /*début 2ème section*/
-.titresection2
-{
-    margin-left: 40px;
-}
 
 #activite h2
 {
     margin-top: 10px;
-}
-
-#activite
-{
-    margin-left: 20px;
 }
 
 #imageactivite
@@ -549,10 +557,20 @@ footer
     margin-top: 40px;
     background-color: #F2F2F2;
     display: flex;
+    min-height: 200px;
+    margin-left: -50px;
+}
+
+footer h2 
+{
+    margin-top: 30px;
+    margin-left: 30px;
 }
 
 footer ul
 {
+    margin-left: 30px;
+    margin-top: 30px;
     padding-left: 0px;
     display: flex;
     flex-direction: column;
@@ -560,7 +578,7 @@ footer ul
 
 .footer1
 {
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 .footer2
@@ -573,6 +591,7 @@ footer ul
     margin-left: 500px;
 }
 
+
 footer a:hover
 {
     font-weight: bold;
@@ -583,29 +602,47 @@ footer a:hover
 /*responsive*/
 
 /*mobile*/
+
 /*header*/
+
 @media all and (max-width: 767px)
 {
-
-    header
+    body 
     {
-        margin-left: -30px;
+        margin-left: 0;
     }
 
-    header ul 
+    #logo 
     {
-        margin-left: 40px;
+        width: 100px;
+        height: 50px;
+        align-items: center;
+        margin-bottom: 20px;
     }
 
     #ancre
     {
+        align-items: center;
         display: flex;
         flex-direction: column;
     }
 
-    #logo
+    header
     {
-        align-self: center;
+        margin-left: 10px;
+    }
+
+    header p
+    {
+        margin-top: 10px;
+    }
+
+    form
+    {
+        margin-left: 10px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
     }
 
     .bouton
@@ -613,14 +650,8 @@ footer a:hover
         display: none;
     }
 
-    #localisation
-    {
-        margin-left: -30px;
-    }
-
     #loupe
     {
-        width: 20px;
         display: block;
         font-size: 20px;
         padding: 17px;
@@ -629,55 +660,44 @@ footer a:hover
         border-radius: 20px;
         border: none;
         position: relative;
-        bottom: 104px;
-        left: 340px;
-        margin-left: -50px;
+        right: 40px;
     }
 
     .filtres
     {
-        flex-flow: column wrap;
-        position: relative;
-        bottom: 70px;
+        margin-left: 10px;
+        flex-direction: column;
     }
 
     .filtres ul
     {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        bottom: 30px;
+        margin-top: 0;
+        flex-direction: column;       
     }
 
     .filtres a 
     {
-        padding: 10px;
         border: 2px solid #F2F2F2;
-        margin-left: -40px;
-    }
-
-    .filtres i 
-    {
-        padding: 15px;
-        margin-top: 20px;
-    }
-
-    .filtres p 
-    {
-        margin-left: 10px;
+        font-size: 20px;
     }
 
     #familial
     {
-        margin-left: 20px;
+        margin-left: -40px;
+    }
+   
+    .filtres i 
+    {
+        margin-right: 0;
+        padding: 13px;
+        margin-top: 10px;
     }
 
     #info
     {
-        position: relative;
-        bottom: 100px;
-        margin-left: 10px;
+        margin-bottom: 20px;
     }
+
 /*header*/
 
 
@@ -686,7 +706,7 @@ footer a:hover
     {
         display: flex;
         flex-direction: column-reverse;
-        margin-left: 0;
+
     }
 
     article
@@ -698,31 +718,33 @@ footer a:hover
     
     article div  
     {
+        margin-left: 10px;
         margin-top: 10px;
-        margin-left: 0;
-        border: 5px solid transparent;
-        box-shadow: 6px 6px 6px #F2F2F2;
     }
 
-    article h1 
+    #cannebiere, #port, #amina, #mer, #panier, #mouette
     {
-        margin-left: 0;
+        border: 5px solid transparent;
+        box-shadow: 0px 10px 10px #F2F2F2;
     }
-
 
 
     aside
     {
-        position: relative;
-        bottom: 40px;
         width: 400px;
         height: auto;
+        border-radius: 0;
     }
 
     aside h1
     {
         display: flex;
         flex-direction: row;
+    }
+
+    #blanc
+    {
+        margin-bottom: 20px;
     }
 
     #economie
@@ -732,68 +754,69 @@ footer a:hover
 /*section1*/  
 
 /*section2*/
-    #activite
-    {
-        margin-left: 0;
-        position: relative;
-        bottom: 50px;
-        height: 900px;
-    }
+#activite
+{
+    width: 400px;
+    height: 1100px;
+}
 
-    #imageactivite
-    {
-        display: flex;
-        flex-direction: column;
-    }
+#imageactivite
+{
+    display: flex;
+    flex-direction: column;
+}
 
-    #activite div 
-    {
-        width: 350px;
-        height: 150px;
-        margin-left: 10px;
-    }
+#activite div 
+{
+    width: 350px;
+    height: 180px;
+}
 
-    #activite img 
-    {
-        width:350px;
-        height: 100px;
-        object-fit: cover;
-    }
-
-    .titresection2
-    {
-        margin-left: 10px;
-    }
+#activite img 
+{
+    width: 350px;
+    height: 130px;
+    object-fit: cover;
+}
 
 /*section2*/
 
 /*footer*/
     footer 
     {
+        max-width: 100%;
         display: flex;
         flex-direction: column;
     }
 
     .footer1
     {
-        margin-left: 20px;
+        margin-left: 50px;
     }
 
     .footer2
     {
-        margin-left: 20px;
+        margin-left: 50px;
     }
 
     .footer3
     {
-        margin-left: 20px;
+        margin-left: 50px;
     }
+
 /*footer*/
 }
 /*mobile*/
 
+
+/*tablettes*/
 @media all and (min-width: 768px) and (max-width: 992px)
 {
+    body 
+    {
+        margin-left: 10px;
+    }
+
 /*header*/
 
     .filtres
@@ -809,10 +832,16 @@ footer a:hover
         border: none;
     }
 
+    .filtres p 
+    {
+        margin-top: 30px;
+    }
+
     .filtres i 
     {
         margin-left: 30px;
     }
+
 /*header
 
 /*section1*/
@@ -825,18 +854,20 @@ footer a:hover
     article
     {
         height: auto;
-        width: auto;
+        width: 100%;
     }
 
     article div 
     {
-        margin-left: 10px;
+        width: 100%;
         margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 20px;
     }
 
     article img 
     {
-        width: 620px;
+        width: 100%;
         height: 320px;
     }
 
@@ -848,8 +879,13 @@ footer a:hover
     aside 
     {
         margin-top: 20px;
-        width: auto;
+        width: 100%;
         height: auto;
+    }
+
+    aside p 
+    {
+        font-size: 1.5em;
     }
 
     aside img 
@@ -868,19 +904,19 @@ footer a:hover
 
     #frioul img, #pomegue img, #longchamp img, #garde img 
     {
-        height: 250px;
+        width: 100%;
     }
 
     #vieuxport, #calanque
     {
-        width: 320px;
+        width: 50%;
     }
 
     #frioul, #pomegue, #longchamp, #garde
     {
-        width: 300px;
-        height: 290px;
-        margin-top: 10px;
+        width: 100%;
+        height: 100%;
+        margin-top: 40px;
     }
 
 /*section2*/
@@ -894,7 +930,7 @@ footer a:hover
 
     .footer1
     {
-        margin-left: 20px;
+        margin-left: 50px;
     }
 
     .footer2
@@ -906,7 +942,6 @@ footer a:hover
     {
         margin-left: 90px;
     }
-
-  
+/*footer*/
 }
-
+/*tablettes*/
