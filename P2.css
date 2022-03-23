@@ -11,6 +11,21 @@ body
     padding: 0;
 }
 
+.fa-star
+{
+    color: #0065FC;
+}
+
+.fa-star.gray
+{
+    color: #F2F2F2;
+}
+
+li
+{
+    list-style-type: none;
+}
+
 /*disposition de l'en-tête*/
 header img
 {
@@ -25,17 +40,10 @@ header h1
     font-size: 1.8em;
 }
 
-header p
+#tete p
 {
     font-size: 1.2em;
 }
-
- header
- {
-     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
- }
 
  #ancre
  {
@@ -45,9 +53,8 @@ header p
      justify-content: space-between;
  }
 
- header li
+ #ancre li
  {
-     list-style-type: none; 
      margin-right: 60px;
      font-size: 1.3em;
  }
@@ -68,12 +75,13 @@ header p
     padding: 25px 10px 10px 10px
  }
 
-header a:hover
+#ancre a:hover
 {
     color: #0065FC;
     border-top: 2px solid;
 }
 
+/*formulaire recherche*/
 .recherche
 { 
     border: 1px solid #F2F2F2;
@@ -112,7 +120,9 @@ header a:hover
 {
     display: none;
 }
+/*formulaire recherche*/
 
+/*filtres*/
 .filtres
 {
     margin-top: 30px;
@@ -124,12 +134,6 @@ header a:hover
 {
     font-size: 1.5em;
     font-weight: bold; 
-}
-
-ul
-{
-    list-style-type: none;
-    display: flex;
 }
 
 .filtres a
@@ -150,15 +154,9 @@ ul
     background-color: #DEEBFF;
 }
 
-#row
-{
-    display: flex;
-    flex-direction: row;
-}
-
 li i
 {
-    padding: 14px;
+    padding: 15px;
     margin-right: 10px;
     border-radius: 40px;
     background-color: #DEEBFF;
@@ -166,6 +164,7 @@ li i
     position: relative;
     right: 10px;
 }
+/*filtres*/
 
 #info
 {
@@ -195,7 +194,7 @@ li i
 section h1
 {
     margin-top: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 1.7em;
     margin-left: 20px;
 }
@@ -244,6 +243,22 @@ section a:hover
     margin-right: 10px;
 }
 
+#image
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#cannebiere, #mer, #panier, #amina, #mouette, #port
+{
+    border: 5px solid transparent;
+    box-shadow: 0px 3px 10px gray;
+    border-radius: 20px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
 #article1 h2
 {
     font-size: 1.3em;
@@ -259,73 +274,6 @@ section a:hover
     left: 10px;
 }
 
-#bleu
-{
-    color:#0065FC;
-}
-
-#grise
-{
-    color: #F2F2F2;
-}
-
-#image
-{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-#cannebiere
-{
-    border: 5px solid transparent;
-    box-shadow: 0px 3px 10px gray;
-    border-radius: 20px;
-    background-color: white;
-}
-
-#port
-{
-    border: 5px solid transparent;
-    box-shadow: 0px 3px 10px gray;
-    border-radius: 20px;
-    background-color: white;
-}
-
-#mouette
-{
-    border: 5px solid transparent;
-    box-shadow: 0px 3px 10px gray;
-    border-radius: 20px;
-    background-color: white;
-}
-
-#mer
-{
-    border: 5px solid transparent;
-    box-shadow: 0px 3px 10px gray;
-    border-radius: 20px;
-    background-color: white;
-    margin-top: 20px;
-}
-
-#panier
-{
-    border: 5px solid transparent;
-    box-shadow: 0px 3px 10px gray;
-    border-radius: 20px;
-    background-color: white;
-    margin-top: 20px;
-}
-
-#amina
-{
-    border: 5px solid transparent;
-    box-shadow: 0px 3px 10px gray;
-    border-radius: 20px;
-    background-color: white;
-    margin-top: 20px;
-}
 
 #afficher
 {
@@ -359,6 +307,7 @@ aside div
 {
     width: 85%;
     margin-left: 35px;
+    margin-bottom: 20px;
 }
 
 aside img
@@ -378,7 +327,7 @@ aside p
 aside i
 {
     font-size: 15px;
-    margin-top: 30px;
+    align-self: flex-end;
 }
 
 #economie
@@ -389,24 +338,8 @@ aside i
 }
 
 
-#soleil
+#soleil, #eau, #blanc
 {
-    border: 5px solid transparent;
-    border-radius: 20px;
-    background-color: white;
-    margin-top: 20px;
-}
-
-#eau
-{
-    border: 5px solid transparent;
-    border-radius: 20px;
-    background-color: white;
-    margin-top: 20px;
-}
-
-#blanc
-{ 
     border: 5px solid transparent;
     border-radius: 20px;
     background-color: white;
@@ -594,6 +527,11 @@ footer ul
     flex-direction: column;
 }
 
+footer li
+{
+    padding: 10px;
+}
+
 .footer1
 {
     margin-left: 20px;
@@ -658,7 +596,7 @@ footer a:hover
     form
     {
         margin-left: 10px;
-        margin-top: 30px;
+        margin-top: 10px;
         display: flex;
         flex-direction: row;
     }
@@ -683,25 +621,25 @@ footer a:hover
 
     .filtres
     {
-        margin-left: 10px;
         flex-direction: column;
+    }
+
+    .filtres p 
+    {
+        margin-left: 10px;
     }
 
     .filtres ul
     {
-        margin-top: 0;
-        flex-direction: column;       
+        flex-direction: row; 
+        flex-wrap: wrap;     
     }
 
     .filtres a 
     {
         border: 2px solid #F2F2F2;
-        font-size: 20px;
-    }
-
-    #familial
-    {
-        margin-left: -40px;
+        font-size: 18px;
+        margin-left: 10px;
     }
    
     .filtres i 
@@ -723,7 +661,6 @@ footer a:hover
 /*section1*/
     #hebergement
     {
-        display: flex;
         flex-direction: column-reverse;
 
     }
@@ -760,12 +697,6 @@ footer a:hover
         width: 100%;
         height: auto;
         border-radius: 0;
-    }
-
-    aside h1
-    {
-        display: flex;
-        flex-direction: row;
     }
 
     #blanc
@@ -855,7 +786,8 @@ footer a:hover
 
     .filtres
     {
-        margin-top: 30px;
+        margin-top: 20px;
+        flex-direction: column;
     }
 
     .filtres a 
@@ -863,24 +795,29 @@ footer a:hover
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        margin-left: 10px;
+        padding: 0;
         border: none;
     }
 
     .filtres p 
     {
         margin-top: 30px;
+        margin-bottom: 10px;
     }
 
     .filtres i 
     {
-        margin-left: 30px;
+        margin-left: 10px;   
     }
+
 
 /*header
 
 /*section1*/
     #hebergement
     {
+        margin-right: 10px;
         display: flex;
         flex-direction: column;
     }
@@ -924,7 +861,7 @@ footer a:hover
 
     aside img 
     {
-        width: 300px;
+        width: 40%;
         height: 200px;
     }
 /*section1*/
@@ -963,17 +900,17 @@ footer a:hover
 
     .footer1
     {
-        margin-left: 50px;
+        margin-left: 40px;
     }
 
     .footer2
     {
-        margin-left: 90px;
+        margin-left: 40px;
     }
 
     .footer3
     {
-        margin-left: 90px;
+        margin-left: 40px;
     }
 /*footer*/
 }
