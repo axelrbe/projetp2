@@ -187,6 +187,7 @@ li i
 
 #hebergement
 { 
+    padding-right: 50px;
     margin-top: 10px;
     display: flex;   
 }
@@ -286,11 +287,10 @@ section a:hover
 /*aside*/
 aside
 {
-    border: 5px solid transparent;
+    border: 1px solid transparent;
     border-radius: 20px;
     background-color: #F2F2F2;
-    width: 30%;
-    margin-right: 50px;
+    
 }
 
 aside a
@@ -298,15 +298,10 @@ aside a
     display: flex;
 }
 
-aside h1
-{
-    margin-left: 20px;
-}
-
 aside div
 {
     width: 85%;
-    margin-left: 35px;
+    margin-left: 30px;
     margin-bottom: 20px;
 }
 
@@ -327,14 +322,12 @@ aside p
 aside i
 {
     font-size: 15px;
-    align-self: flex-end;
 }
 
 #economie
 {
-    margin-top: 0;
     font-size: 30px;
-    margin-left: 140px;
+    padding-left: 140px;
 }
 
 
@@ -343,7 +336,6 @@ aside i
     border: 5px solid transparent;
     border-radius: 20px;
     background-color: white;
-    margin-top: 20px;
 }
 
     /*aside*/
@@ -565,14 +557,20 @@ footer a:hover
 {
     body 
     {
+        width: 100%;
         margin-left: 0;
+    }
+
+    header 
+    {
+        width: 100%;
     }
 
     #logo 
     {
+        align-self: center;
         width: 100px;
         height: 50px;
-        align-items: center;
         margin-bottom: 20px;
     }
 
@@ -581,38 +579,55 @@ footer a:hover
         width: 100%;
     }
 
+    #tete
+    {
+        padding-left: 10px;
+        width: 90%;
+    }
+/*ancre*/
+
     #ancre
     {
-        align-items: center;
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
 
     #ancre li 
     {
+        width: 50%;
         border-bottom: 2px solid silver;
-        width: 100%;
+        padding-bottom: 10px;
         text-align: center;
     }
 
-    header p
+    #ancre a:hover
     {
-        margin-top: 10px;
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
     }
+/*ancre*/
 
+/*formulaire*/
     form
     {
-        margin-left: 10px;
-        margin-top: 10px;
+        width: 100%;
+        padding-left: 10px;
         display: flex;
-        flex-direction: row;
+    }
+
+    .recherche
+    {
+        width: 95%;
+        padding: 10px;
+        font-size: 1.2em;
     }
 
     .bouton
     {
         display: none;
     }
-
+    
     #loupe
     {
         display: block;
@@ -625,9 +640,12 @@ footer a:hover
         position: relative;
         right: 40px;
     }
+/*formulaire*/
 
+/*filtres*/
     .filtres
     {
+        width: 90%;
         flex-direction: column;
     }
 
@@ -641,7 +659,12 @@ footer a:hover
     {
         border: 2px solid #F2F2F2;
         font-size: 18px;
-        margin-left: 10px;
+        
+    }
+
+    .filtres p 
+    {
+        padding-left: 10px;
     }
    
     .filtres i 
@@ -653,9 +676,11 @@ footer a:hover
 
     #info
     {
+        width: 90%;
+        padding-left: 10px;
         margin-bottom: 20px;
     }
-
+/*filtres*/
 /*header*/
 
 
@@ -705,15 +730,20 @@ footer a:hover
         height: auto;
     }
 
+    aside img 
+    {
+        width: 50%;
+    }
+
     aside p 
     {
         font-size: 1em;
     }
 
-   #economie
-   {
-       margin-left: 30px;
-   }
+    #economie
+    {
+        display: none;
+    }
 /*section1*/  
 
 /*section2*/
