@@ -1,6 +1,7 @@
 body
 {
-    margin-left: 40px;
+    margin: 0 auto;
+    max-width: 1600px;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -62,6 +63,7 @@ header h1
  header ul
  {
      display: flex;
+     flex-wrap: wrap;
  }
 
  nav a
@@ -72,7 +74,7 @@ header h1
 
  header a
  {
-    padding: 25px 10px 10px 10px
+    padding: 28px 10px 10px 10px
  }
 
 #ancre a:hover
@@ -139,30 +141,38 @@ header h1
 .filtres a
 {
     border: 2px solid #F2F2F2;
-    padding: 10px;
     border-radius: 40px;
     text-decoration: none;
     color: black;
     margin-right: 30px;
     margin-left: 20px;
+    margin-top: 10px;
     font-size: 1.3em;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px 5px 55px;
+    position: relative;
+    height: 39px;
+}
+
+.filtres i
+{
+    position: absolute;
+    left: -2px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    background-color: #DEEBFF;
+    color: #0065FC;
 }
 
 .filtres a:hover
 {
     background-color: #DEEBFF;
-}
-
-li i
-{
-    padding: 15px;
-    margin-right: 10px;
-    border-radius: 40px;
-    background-color: #DEEBFF;
-    color: #0065FC;
-    position: relative;
-    right: 10px;
 }
 /*filtres*/
 
@@ -186,13 +196,12 @@ li i
  /*section*/
 
 #hebergement
-{ 
-    padding-right: 50px;
+{   
     margin-top: 10px;
     display: flex;   
 }
 
-section h1
+.titre1
 {
     margin-top: 30px;
     margin-bottom: 20px;
@@ -225,7 +234,7 @@ section a:hover
     border: 1px solid transparent;
     border-radius: 20px;
     background-color: #F2F2F2;
-    width: 80%;
+    width: 90%;
     margin-right: 30px;
 }
 
@@ -233,14 +242,13 @@ section a:hover
 {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    width: 350px;
-    height: 150px;
+    width: 300px;
+    height: 130px;
     object-fit: cover;
 }
 
 #article1 div
 {
-    margin-left: 30px;
     margin-right: 10px;
 }
 
@@ -257,12 +265,13 @@ section a:hover
     box-shadow: 0px 3px 10px gray;
     border-radius: 20px;
     background-color: white;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px;
 }
 
-#article1 h2
+#article1 h3
 {
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin-left: 10px;
     margin-top: 10px;
 }
@@ -270,7 +279,7 @@ section a:hover
 #article1 i
 {
     margin-top: 10px;
-    font-size: 15px;
+    font-size: 14px;
     position: relative;
     left: 10px;
 }
@@ -278,19 +287,19 @@ section a:hover
 
 #afficher
 {
-    margin-top: 20px;
     font-size: 1.2em;
     font-weight: bold;
+    padding-top: 10px;
 }
 /*article*/
 
 /*aside*/
 aside
 {
+    width: 35%;
     border: 1px solid transparent;
     border-radius: 20px;
     background-color: #F2F2F2;
-    
 }
 
 aside a
@@ -300,9 +309,17 @@ aside a
 
 aside div
 {
-    width: 85%;
-    margin-left: 30px;
+    width: 90%;
+    margin-left: 20px;
     margin-bottom: 20px;
+}
+
+aside h2 
+{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 1.7em;
+    margin-left: 20px;
 }
 
 aside img
@@ -316,18 +333,18 @@ aside img
 
 aside p
 {
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
-aside i
+aside i 
 {
-    font-size: 15px;
+    font-size: 14px;
 }
 
 #economie
 {
     font-size: 30px;
-    padding-left: 140px;
+    padding-left: 50px;
 }
 
 
@@ -344,148 +361,86 @@ aside i
 
 
 /*début 2ème section*/
-
-#activite h2
+#activite h2 
 {
-    margin-top: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 1.7em;
+    margin-left: 20px;
+}
+
+#activite h3
+{
+    padding-top: 10px;
+    padding-left: 10px;
 }
 
 #imageactivite
 {
+    width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     border: 1px solid transparent;
 }
 
-#activite img
+.grande
 {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-}
-
-#activite div
-{
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-#vieuxport
-{
-    border: 1px solid transparent;
-    box-shadow: 0px 0px 8px #DEEBFF;
-    border-radius: 20px;
-    background-color: white;
-    margin-top: 10px;
-    width: 430px;
-    height: 600px;
-}
-
-.vieuxport
-{
+    object-fit: cover;
     width: 100%;
     height: 550px;
+}
+
+.petite
+{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
     object-fit: cover;
-}
-
-#calanque
-{
-    border: 1px solid transparent;
-    box-shadow: 0px 0px 8px #DEEBFF;
-    border-radius: 20px;
-    background-color: white;
-    margin-top: 10px;
-    width: 430px;
-    height: 600px;
-}
-
-.calanque
-{
-    width: 100%;
-    height: 550px;
-    object-fit: cover;
-}
-
-#frioul
-{
-    border: 1px solid transparent;
-    box-shadow: 0px 0px 8px #DEEBFF;
-    border-radius: 20px;
-    background-color: white;
-    margin-top: 10px;
-    width: 430px;
-    height: 250px;
-    margin-top: 75px;
-}
-
-.frioul
-{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-#pomegue
-{
-    border: 1px solid transparent;
-    box-shadow: 0px 0px 8px #DEEBFF;
-    border-radius: 20px;
-    background-color: white;
-    margin-top: 10px;
-    width: 430px;
-    height: 270px;
-}
-
-.pomegue
-{
-   width: 100%;
-   height: 220px;
-   object-fit: cover;
-}
-
-#garde
-{
-    border: 1px solid transparent;
-    box-shadow: 0px 0px 8px #DEEBFF;
-    border-radius: 20px;
-    background-color: white;
-    margin-top: 10px;
-    width: 430px;
-    height: 250px;
-}
-
-.garde
-{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-#longchamp
-{
-    border: 1px solid transparent;
-    box-shadow: 0px 0px 8px #DEEBFF;
-    border-radius: 20px;
-    background-color: white;
-    margin-top: 10px;
-    width: 430px;
-    height: 270px;
-    margin-top: 75px;
-}
-
-.longchamp
-{
     width: 100%;
     height: 220px;
-    object-fit: cover;
 }
 
-.column1
+
+#vieuxport, #calanque
 {
-    display: flex;
-    flex-direction: column;
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 8px #DEEBFF;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 300px;
 }
 
-.column2
+#frioul, #longchamp
+{
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 8px #DEEBFF;
+    border-radius: 20px;
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 80px;
+    width: 300px;
+}
+
+#pomegue, #garde
+{
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 8px #DEEBFF;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 300px;
+}
+
+.colonne
 {
     display: flex;
     flex-direction: column;
@@ -501,7 +456,6 @@ footer
     background-color: #F2F2F2;
     display: flex;
     min-height: 200px;
-    margin-left: -50px;
 }
 
 footer h2 
@@ -524,19 +478,9 @@ footer li
     padding: 10px;
 }
 
-.footer1
+.footer
 {
-    margin-left: 20px;
-}
-
-.footer2
-{
-    margin-left: 500px;
-}
-
-.footer3
-{
-    margin-left: 500px;
+    flex: 1;
 }
 
 
@@ -558,7 +502,6 @@ footer a:hover
     body 
     {
         width: 100%;
-        margin-left: 0;
     }
 
     header 
@@ -574,19 +517,14 @@ footer a:hover
         margin-bottom: 20px;
     }
 
-    nav 
-    {
-        width: 100%;
-    }
-
     #tete
     {
         padding-left: 10px;
         width: 90%;
     }
-/*ancre*/
 
-    #ancre
+/*ancre*/
+     #ancre
     {
         width: 100%;
         display: flex;
@@ -601,10 +539,14 @@ footer a:hover
         text-align: center;
     }
 
+    #ancre li:hover
+    {
+        border-bottom: 2px solid #0065FC;
+    }
+
     #ancre a:hover
     {
         border-top: none;
-        border-bottom: 2px solid #0065FC;
     }
 /*ancre*/
 
@@ -613,7 +555,7 @@ footer a:hover
     {
         width: 100%;
         padding-left: 10px;
-        display: flex;
+        display: flex;     
     }
 
     .recherche
@@ -638,7 +580,7 @@ footer a:hover
         border-radius: 20px;
         border: none;
         position: relative;
-        right: 40px;
+        right: 30px;
     }
 /*formulaire*/
 
@@ -649,29 +591,15 @@ footer a:hover
         flex-direction: column;
     }
 
-    .filtres ul
-    {
-        flex-direction: row; 
-        flex-wrap: wrap;     
-    }
-
     .filtres a 
     {
         border: 2px solid #F2F2F2;
-        font-size: 18px;
-        
+        font-size: 18px;      
     }
 
     .filtres p 
     {
         padding-left: 10px;
-    }
-   
-    .filtres i 
-    {
-        margin-right: 0;
-        padding: 13px;
-        margin-top: 10px;
     }
 
     #info
@@ -688,21 +616,17 @@ footer a:hover
     #hebergement
     {
         flex-direction: column-reverse;
-
     }
 
     #article1
     {
-        height: auto;
         background-color: white;
-        width: 100%;
+        width: 95%;
     }
     
     #article1 div  
     {
-        width: 90%;
-        margin-left: 7px;
-        margin-top: 10px;
+        width: 100%;
     }
 
     #article1 img 
@@ -714,6 +638,12 @@ footer a:hover
     {
         border: 5px solid transparent;
         box-shadow: 0px 10px 10px #F2F2F2;
+        margin-left: 10px;
+    }
+
+    #afficher
+    {
+        padding-left: 10px;
     }
 
 
@@ -725,8 +655,8 @@ footer a:hover
 
     aside div 
     {
-        margin-left: 10px;
         width: 90%;
+        margin-left: 10px;
         height: auto;
     }
 
@@ -735,51 +665,37 @@ footer a:hover
         width: 50%;
     }
 
-    aside p 
-    {
-        font-size: 1em;
-    }
-
     #economie
     {
-        display: none;
+        padding-left: 10px;
     }
 /*section1*/  
 
 /*section2*/
-    #activite
-    {
-        width: 100%;
-    }
+#imageactivite
+{
+    display: flex;
+    flex-direction: column;
+}
 
-    #imageactivite
-    {
-        display: flex;
-        flex-direction: column;
-    }
+#calanque, #vieuxport, #pomegue, #garde, #frioul, #longchamp
+{
+    width: 90%;
+    margin-top: 20px;
+}
 
-    #activite div 
-    {
-        width: 90%;
-        height: auto;
-        margin-top: 10px;
-        margin-left: 7px;
-    }
+.petite, .grande 
+{
+    width: 100%;
+    height: 160px;
+}
 
-    #activite img 
-    {
-        width: 100%;
-        height: 150px;
-        object-fit: cover;
-    }
-
-    #activite h2 
-    {
-        font-size: 1.3em;
-        margin-left: 10px;
-        margin-bottom: 10px;
-    }
-
+#activite h2 
+{
+    font-size: 1.3em;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
 /*section2*/
 
 /*footer*/
@@ -789,22 +705,6 @@ footer a:hover
         display: flex;
         flex-direction: column;
     }
-
-    .footer1
-    {
-        margin-left: 50px;
-    }
-
-    .footer2
-    {
-        margin-left: 50px;
-    }
-
-    .footer3
-    {
-        margin-left: 50px;
-    }
-
 /*footer*/
 }
 /*mobile*/
@@ -813,12 +713,17 @@ footer a:hover
 /*tablettes*/
 @media all and (min-width: 768px) and (max-width: 992px)
 {
-    body 
-    {
-        margin-left: 10px;
-    }
 
 /*header*/
+    form 
+    {
+        padding-left: 10px;
+    }
+
+    #tete
+    {
+        padding-left: 10px;
+    }
 
     .filtres
     {
@@ -832,7 +737,6 @@ footer a:hover
         flex-direction: row;
         flex-wrap: wrap;
         margin-left: 10px;
-        padding: 0;
         border: none;
     }
 
@@ -840,11 +744,17 @@ footer a:hover
     {
         margin-top: 30px;
         margin-bottom: 10px;
+        padding-left: 10px;
     }
 
     .filtres i 
     {
         margin-left: 10px;   
+    }
+
+    #info
+    {
+        padding-left: 10px;
     }
 
 
@@ -853,7 +763,6 @@ footer a:hover
 /*section1*/
     #hebergement
     {
-        margin-right: 10px;
         display: flex;
         flex-direction: column;
     }
@@ -905,49 +814,22 @@ footer a:hover
 /*section2*/
     #imageactivite
     {
-        display: flex;
+        width: 100%;
         flex-wrap: wrap;
-    }
-
-    #frioul img, #pomegue img, #longchamp img, #garde img 
-    {
-        width: 100%;
-    }
-
-    #vieuxport, #calanque
-    {
-        width: 50%;
-    }
-
-    #frioul, #pomegue, #longchamp, #garde
-    {
-        width: 100%;
-        margin-top: 35px;
-    }
-
+    }  
 /*section2*/
-
-/*footer*/
-    footer 
-    {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .footer1
-    {
-        margin-left: 40px;
-    }
-
-    .footer2
-    {
-        margin-left: 40px;
-    }
-
-    .footer3
-    {
-        margin-left: 40px;
-    }
-/*footer*/
 }
 /*tablettes*/
+
+@media all and (min-width: 993px) and (max-width: 1380px)
+{
+    #vieuxport, #pomegue, #longchamp, #garde, #calanque, #frioul
+    {
+        width: 430px;
+    }
+
+    #article1 img 
+    {
+        width: 230px;
+    }
+}
