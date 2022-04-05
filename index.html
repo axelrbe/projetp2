@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="P2.css">
+        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +15,9 @@
 <!--début de l'en-tête-->
 
 <body>
+
+    <main>
+
     <header>
 
         <div id="ancre">
@@ -28,10 +31,14 @@
             </nav>
         </div>
 
-            <div id="tete">
+            <div id="titre">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
+
+    </header>
+
+        <div id="en-tete">
 
             <div class="formulaire">
 
@@ -56,14 +63,14 @@
                 <p><i class="fa-solid fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
 
-    </header>
+        </div>       
             
 <!--fin de l'en-tête-->
 
 <!--debut 1ère section-->
-        <section id="hebergement"> <!--conteneur-->
+        <article id="hebergement"> <!--conteneur-->
                 
-            <article id="article1"> <!--element1-->
+            <div id="article1"> <!--element1-->
 
                 <h2 class="titre1">Hébergements à Marseille</h2>
 
@@ -122,7 +129,7 @@
 
                         <p id="afficher"><a href="#">Afficher Plus</a></p>
 
-             </article> <!--element1-->
+                </div> <!--element1-->
 
                     <aside> <!--element2-->
 
@@ -154,13 +161,13 @@
                             
                     </aside> <!--element2-->
 
-        </section>
+                </article>
 
 <!--fin 1ère section-->
 
 <!--début 2ème section-->
 
-        <section id="activite">
+        <article id="activite">
 
             <h2>Activités à Marseille</h2>
 
@@ -171,7 +178,7 @@
                         <h3>Vieux Port</h3></a>
                     </div>
                 
-                <article class="colonne">
+                <section class="colonne">
 
                     <div id="pomegue"><a href="#">
                         <img src="activite/pomegue_s.jpg" alt="pomegue" class="petite" />
@@ -183,14 +190,14 @@
                         <h3>Iles du Frioul</h3></a>
                     </div>
 
-                </article>
+                </section>
 
                     <div id="calanque"><a href="#">  
                         <img src="activite/calanque_s.jpg" alt="calanque" class="grande" />                     
                         <h3>Parc national des Calanques</h3></a>
                     </div>
 
-                <article class="colonne">
+                <section class="colonne">
 
                     <div id="garde"><a href="#">  
                         <img src="activite/garde_s.jpg" alt="garde" class="petite" />                     
@@ -202,12 +209,14 @@
                         <h3>Parc Longchamp</h3></a>
                     </div>
 
-                </article>
+                </section>
 
             </div>
 
 
-            </section>
+        </article>
+
+    </main>
 
 <!--fin 2ème section-->
 
