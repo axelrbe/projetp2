@@ -1,113 +1,96 @@
-body
-{
+body {
     font-family: 'Raleway', sans-serif;
 }
 
-main
-{
+main {
     margin: 0 auto;
     max-width: 1600px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
-*, ::before, ::after
-{
+*,::before,::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-.fa-star
-{
+.fa-star {
     color: #0065FC;
 }
 
-.fa-star.gray
-{
+.fa-star.gray {
     color: #F2F2F2;
 }
 
-li
-{
+li {
     list-style-type: none;
 }
 
 /*disposition de l'en-tête*/
-header img
-{
+header img {
     width: 150px;
     height: 70px;
     margin-left: 40px;
 }
 
-header h1
-{
+header h1 {
     margin-top: 30px;
     font-size: 1.8em;
 }
 
-header ul 
-{
+header ul {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
-#titre p
-{
+#titre p {
     font-size: 1.2em;
 }
 
- #ancre
- {
-     margin-top: 30px;
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
- }
+#ancre {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
- #ancre li
- {
-     padding-right: 60px;
-     font-size: 1.3em;
- }
+#ancre li {
+    padding-right: 60px;
+    font-size: 1.3em;
+}
 
- #en-tete ul
- {
-     display: flex;
-     flex-wrap: wrap;
- }
+#en-tete ul {
+    display: flex;
+    flex-wrap: wrap;
+}
 
- nav a
- {
-     color: black;
-     text-decoration: none;
- }
+nav a {
+    color: black;
+    text-decoration: none;
+}
 
- #ancre a
- {
+#ancre a {
     padding: 28px 10px 10px 10px
- }
+}
 
-#ancre a:hover
-{
+#ancre a:hover {
     color: #0065FC;
     border-top: 2px solid;
 }
 
 /*formulaire recherche*/
-.recherche
-{ 
+.recherche {
     border: 1px solid #F2F2F2;
     padding: 15px;
     font-size: 20px;
 }
 
-.formulaire
-{
+.formulaire {
     margin-top: 10px;
 }
 
-.bouton
-{
+.bouton {
     font-size: 20px;
     padding: 15px;
     color: white;
@@ -119,8 +102,7 @@ header ul
     right: 10px;
 }
 
-#localisation
-{
+#localisation {
     padding: 18px;
     font-size: 20px;
     border-top-left-radius: 20px;
@@ -128,28 +110,25 @@ header ul
     background-color: #F2F2F2;
 }
 
-#loupe
-{
+#loupe {
     display: none;
 }
+
 /*formulaire recherche*/
 
 /*filtres*/
-.filtres
-{
+.filtres {
     margin-top: 30px;
     display: flex;
     flex-direction: row;
 }
 
-.filtres p
-{
+.filtres p {
     font-size: 1.5em;
-    font-weight: bold; 
+    font-weight: bold;
 }
 
-.filtres a
-{
+.filtres a {
     border: 2px solid #F2F2F2;
     border-radius: 40px;
     text-decoration: none;
@@ -166,8 +145,7 @@ header ul
     height: 39px;
 }
 
-.filtres i
-{
+.filtres i {
     position: absolute;
     left: -2px;
     width: 40px;
@@ -180,114 +158,104 @@ header ul
     color: #0065FC;
 }
 
-.filtres a:hover
-{
+.filtres a:hover {
     background-color: #DEEBFF;
 }
+
 /*filtres*/
 
-#info
-{
+#info {
     margin-top: 10px;
     font-size: 1.2em;
 }
 
-#info i
-{
-    padding:5px 10px;
+#info i {
+    padding: 5px 10px;
     color: #0065FC;
     border: 2px solid #F2F2F2;
     border-radius: 50%;
     margin-right: 10px;
 }
- /*fin de l'en-tête*/
 
- /*1ère section*/
- /*section*/
+/*fin de l'en-tête*/
 
-#hebergement
-{   
+/*1ère section*/
+
+/*section*/
+#hebergement {
     margin-top: 10px;
-    display: flex;   
+    display: flex;
 }
 
-.titre1
-{
+.titre1 {
     margin-top: 30px;
     margin-bottom: 20px;
     font-size: 1.7em;
     margin-left: 20px;
 }
 
-article p
-{
+article p {
     margin-left: 10px;
 }
 
-article a 
-{
+article a {
     text-decoration: none;
     color: black;
 }
 
-article a:hover
-{
+article a:hover {
     text-decoration: none;
     color: black;
 }
+
 /*section*/
 
 /*article*/
-#article1
-{
+#article1 {
 
     border: 1px solid transparent;
     border-radius: 20px;
     background-color: #F2F2F2;
-    width: 90%;
+    width: 80%;
     margin-right: 30px;
 }
 
-#article1 img
-{
+#article1 img {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    width: 300px;
-    height: 130px;
+    width: 100%;
+    height: 120px;
     object-fit: cover;
 }
 
-#article1 div
-{
-    margin-right: 10px;
-}
-
-#image
-{
+#image {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-#cannebiere, #mer, #panier, #amina, #mouette, #port
-{
+#cannebiere,
+#mer,
+#panier,
+#amina,
+#mouette,
+#port {
+    width: 28%;
     border: 5px solid transparent;
     box-shadow: 0px 3px 10px gray;
     border-radius: 20px;
     background-color: white;
     margin-bottom: 30px;
-    margin-left: 40px;
 }
 
-#article1 h3
-{
+#article1 h3 {
     font-size: 1.2em;
     margin-left: 10px;
     margin-top: 10px;
 }
 
-#article1 i
-{
+#article1 i {
     margin-top: 10px;
     font-size: 14px;
     position: relative;
@@ -295,98 +263,88 @@ article a:hover
 }
 
 
-#afficher
-{
+#afficher {
     font-size: 1.2em;
     font-weight: bold;
     padding-top: 10px;
 }
+
 /*article*/
 
 /*aside*/
-aside
-{
-    width: 35%;
+aside {
+    width: 45%;
     border: 1px solid transparent;
     border-radius: 20px;
     background-color: #F2F2F2;
+    padding: 10px 20px 10px 20px;
 }
 
-aside a
-{
+#asideimage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside a {
     display: flex;
 }
 
-aside div
-{
-    width: 90%;
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-aside h2 
-{
-    margin-top: 30px;
-    margin-bottom: 20px;
+aside h2 {
+    padding-top: 20px;
     font-size: 1.7em;
-    margin-left: 20px;
+    padding-left: 20px;
 }
 
-aside img
-{
+aside img {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    width: 180px;
-    height: 160px;
+    width: 40%;
+    height: 150px;
     object-fit: cover;
 }
 
-aside p
-{
+aside p {
     font-size: 1.1em;
 }
 
-aside i 
-{
+aside i {
     font-size: 14px;
 }
 
-#economie
-{
+#economie {
     font-size: 30px;
     padding-left: 50px;
 }
 
 
-.populaire
-{
+.populaire {
     border: 5px solid transparent;
     border-radius: 20px;
     background-color: white;
+    width: 90%;
+    margin-top: 20px;
 }
 
-    /*aside*/
+/*aside*/
 
 /*fin 1ère section*/
 
 
 /*début 2ème section*/
-#activite h2 
-{
+#activite h2 {
     margin-top: 30px;
     margin-bottom: 20px;
     font-size: 1.7em;
     margin-left: 20px;
 }
 
-#activite h3
-{
+#activite h3 {
     padding-top: 10px;
     padding-left: 10px;
 }
 
-#imageactivite
-{
+#imageactivite {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -395,17 +353,15 @@ aside i
     border: 1px solid transparent;
 }
 
-.grande
-{
+.grande {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     object-fit: cover;
     width: 100%;
-    height: 550px;
+    height: 500px;
 }
 
-.petite
-{
+.petite {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     object-fit: cover;
@@ -414,8 +370,8 @@ aside i
 }
 
 
-#vieuxport, #calanque
-{
+#vieuxport,
+#calanque {
     border: 1px solid transparent;
     box-shadow: 0px 0px 8px #DEEBFF;
     border-radius: 20px;
@@ -423,23 +379,22 @@ aside i
     margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
-    width: 300px;
+    width: 22%;
 }
 
-#frioul, #longchamp
-{
+#frioul,
+#longchamp {
     border: 1px solid transparent;
     box-shadow: 0px 0px 8px #DEEBFF;
     border-radius: 20px;
     background-color: white;
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: 80px;
-    width: 300px;
+    margin-top: 40px;
 }
 
-#pomegue, #garde
-{
+#pomegue,
+#garde {
     border: 1px solid transparent;
     box-shadow: 0px 0px 8px #DEEBFF;
     border-radius: 20px;
@@ -447,11 +402,10 @@ aside i
     margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
-    width: 300px;
 }
 
-.colonne
-{
+.colonne {
+    width: 22%;
     display: flex;
     flex-direction: column;
 }
@@ -460,22 +414,19 @@ aside i
 
 /*footer*/
 
-footer
-{
+footer {
     margin-top: 40px;
     background-color: #F2F2F2;
     display: flex;
     min-height: 200px;
 }
 
-footer h2 
-{
+footer h2 {
     margin-top: 30px;
     margin-left: 30px;
 }
 
-footer ul
-{
+footer ul {
     margin-left: 30px;
     margin-top: 30px;
     padding-left: 0px;
@@ -483,19 +434,16 @@ footer ul
     flex-direction: column;
 }
 
-footer li
-{
+footer li {
     padding: 10px;
 }
 
-.footer
-{
+.footer {
     flex: 1;
 }
 
 
-footer a:hover
-{
+footer a:hover {
     font-weight: bold;
 }
 
@@ -507,81 +455,69 @@ footer a:hover
 
 /*header*/
 
-@media all and (max-width: 767px)
-{
-    body 
-    {
+@media all and (max-width: 767px) {
+    body {
         width: 100%;
     }
 
-    header 
-    {
+    header {
         width: 100%;
     }
 
-    #logo 
-    {
+    #logo {
         align-self: center;
         width: 100px;
         height: 50px;
         margin-bottom: 20px;
     }
 
-    #titre
-    {
+    #titre {
         padding-left: 10px;
         width: 90%;
     }
 
-/*ancre*/
-     #ancre
-    {
+    /*ancre*/
+    #ancre {
         width: 100%;
         display: flex;
         flex-direction: column;
-    }
-
-    #ancre li 
-    {
-        width: 50%;
-        border-bottom: 2px solid silver;
-        padding-bottom: 10px;
         text-align: center;
     }
 
-    #ancre li:hover
-    {
+    #ancre li {
+        width: 50%;
+        border-bottom: 2px solid silver;
+        padding-bottom: 10px;
+    }
+
+    #ancre li:hover {
         border-bottom: 2px solid #0065FC;
     }
 
-    #ancre a:hover
-    {
+    #ancre a:hover {
         border-top: none;
     }
-/*ancre*/
 
-/*formulaire*/
-    form
-    {
+    /*ancre*/
+
+    /*formulaire*/
+    form {
         width: 100%;
         padding-left: 10px;
-        display: flex;     
+        display: flex;
     }
 
-    .recherche
-    {
+    .recherche {
         width: 95%;
         padding: 10px;
         font-size: 1.2em;
     }
 
-    .bouton
-    {
+    .bouton {
         display: none;
     }
-    
-    #loupe
-    {
+
+    #loupe {
         display: block;
         font-size: 20px;
         padding: 17px;
@@ -592,174 +528,163 @@ footer a:hover
         position: relative;
         right: 30px;
     }
-/*formulaire*/
 
-/*filtres*/
-    .filtres
-    {
+    /*formulaire*/
+
+    /*filtres*/
+    .filtres {
         width: 90%;
         flex-direction: column;
     }
 
-    .filtres a 
-    {
+    .filtres a {
         border: 2px solid #F2F2F2;
-        font-size: 18px;      
+        font-size: 18px;
     }
 
-    .filtres p 
-    {
+    .filtres p {
         padding-left: 10px;
     }
 
-    #info
-    {
+    #info {
         width: 90%;
         padding-left: 10px;
         margin-bottom: 20px;
     }
-/*filtres*/
-/*header*/
+
+    /*filtres*/
+    /*header*/
 
 
-/*section1*/
-    #hebergement
-    {
+    /*section1*/
+    #hebergement {
         flex-direction: column-reverse;
     }
 
-    #article1
-    {
+    #article1 {
         background-color: white;
         width: 100%;
         align-items: center;
     }
-    
-    #article1 div  
-    {
+
+    #article1 div {
         width: 100%;
     }
 
-    #article1 img 
-    {
+    #article1 img {
         width: 100%;
     }
 
-    #cannebiere, #port, #amina, #mer, #panier, #mouette
-    {
+    #cannebiere,
+    #port,
+    #amina,
+    #mer,
+    #panier,
+    #mouette {
         border: 5px solid transparent;
         box-shadow: 0px 10px 10px #F2F2F2;
         margin-left: 10px;
     }
 
-    #afficher
-    {
+    #afficher {
         padding-left: 10px;
     }
 
 
-    aside
-    {
+    aside {
         width: 100%;
         border-radius: 0;
     }
 
-    aside div 
-    {
+    aside div {
         width: 90%;
         margin-left: 10px;
         height: auto;
     }
 
-    aside img 
-    {
+    aside img {
         width: 50%;
     }
 
-    #economie
-    {
+    #economie {
         padding-left: 10px;
     }
-/*section1*/  
 
-/*section2*/
-#imageactivite
-{
-    display: flex;
-    flex-direction: column;
-}
+    /*section1*/
 
-.petite, .grande 
-{
-    width: 100%;
-    height: 160px;
-}
+    /*section2*/
+    #imageactivite {
+        display: flex;
+        flex-direction: column;
+    }
 
-#activite h2 
-{
-    font-size: 1.3em;
-    margin-left: 10px;
-    margin-bottom: 10px;
-}
+    .petite,
+    .grande {
+        width: 100%;
+        height: 160px;
+    }
 
-#pomegue, #garde, #frioul, #longchamp
-{
-    width: 90%;
-    margin-top: 20px;
-}
+    #activite h2 {
+        font-size: 1.3em;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
 
-.colonne
-{
-    width: 100%;
-    align-items: center;
-}
+    #pomegue,
+    #garde,
+    #frioul,
+    #longchamp {
+        width: 90%;
+        margin-top: 20px;
+    }
 
-#calanque, #vieuxport
-{
-    width: 90%;
-    margin-left: 0;
-    margin-right: 0;
-    align-self: center;
-} 
+    .colonne {
+        width: 100%;
+        align-items: center;
+    }
+
+    #calanque,
+    #vieuxport {
+        width: 90%;
+        margin-left: 0;
+        margin-right: 0;
+        align-self: center;
+    }
 
 
-/*section2*/
+    /*section2*/
 
-/*footer*/
-    footer 
-    {
+    /*footer*/
+    footer {
         width: 100%;
         display: flex;
         flex-direction: column;
     }
-/*footer*/
+
+    /*footer*/
 }
+
 /*mobile*/
 
 
 /*tablettes*/
-@media all and (min-width: 768px) and (max-width: 992px)
-{
+@media all and (min-width: 768px) and (max-width: 992px) {
 
-/*header*/
-    form 
-    {
+    /*header*/
+    form {
         padding-left: 10px;
     }
 
-    #titre
-    {
+    #titre {
         padding-left: 10px;
     }
 
-    .filtres
-    {
+    .filtres {
         margin-top: 20px;
         flex-direction: column;
     }
 
-    .filtres a 
-    {
+    .filtres a {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -767,96 +692,81 @@ footer a:hover
         border: none;
     }
 
-    .filtres p 
-    {
+    .filtres p {
         margin-top: 30px;
         margin-bottom: 10px;
         padding-left: 10px;
     }
 
-    .filtres i 
-    {
-        margin-left: 10px;   
+    .filtres i {
+        margin-left: 10px;
     }
 
-    #info
-    {
+    .filtres a:hover {
+        background-color: white;
+        text-decoration: underline;
+        color: #0065FC;
+    }
+
+    #info {
         padding-left: 10px;
     }
 
 
-/*header
+    /*header
 
 /*section1*/
-    #hebergement
-    {
+    #hebergement {
         display: flex;
         flex-direction: column;
     }
 
-    #article1
-    {
+    #article1 {
         height: auto;
         width: 100%;
     }
 
-    #article1 div 
-    {
+    #article1 div {
         width: 100%;
         margin-top: 20px;
         margin-left: 10px;
         margin-right: 20px;
     }
 
-    #article1 img 
-    {
+    #article1 img {
         width: 100%;
         height: 320px;
     }
 
-    #article1 p 
-    {
+    #article1 p {
         font-size: 1.3em;
     }
 
-    aside 
-    {
+    aside {
         margin-top: 20px;
         width: 100%;
         height: auto;
     }
 
-    aside p 
-    {
+    aside p {
         font-size: 1.5em;
     }
 
-    aside img 
-    {
+    aside img {
         width: 40%;
         height: 200px;
     }
-/*section1*/
 
-/*section2*/
-    #imageactivite
-    {
+    /*section1*/
+
+    /*section2*/
+    #imageactivite {
         width: 100%;
         flex-wrap: wrap;
-    }  
-/*section2*/
+    }
+
+    /*section2*/
 }
+
 /*tablettes*/
 
-@media all and (min-width: 993px) and (max-width: 1380px)
-{
-    #vieuxport, #pomegue, #longchamp, #garde, #calanque, #frioul
-    {
-        width: 430px;
-    }
-
-    #article1 img 
-    {
-        width: 230px;
-    }
-}
